@@ -41,6 +41,30 @@ public class ForLoopThanosGauntlet {
 			System.out.println(i + " " + j);
 			}
 		}
-
+		
+		for (int i = 1; i < 10; i+=3) {
+			for (int j = 0; j < 3; j++) {
+			System.out.print(i+j);
+			}
+			System.out.println();
+		}
+		
+		for (int i = 1; i < 101; i+=10) {
+			for (int j = 0; j < 10; j++) {
+			System.out.print(i+j+" ");
+			}
+			System.out.println();
+		}
+		
+		for (int i = 0; i < 6; i++) {
+			for (int j = 0; j < i; j++) {
+			System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		for (int i = 0; i < 101; i++) {
+			System.out.println(i);
+		}
 	}
 }
