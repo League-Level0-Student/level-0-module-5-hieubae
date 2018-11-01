@@ -1,5 +1,7 @@
 package extra;
 
+import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 public class SkillPraticeWorksheet {
@@ -36,7 +38,7 @@ public class SkillPraticeWorksheet {
 		}
 	}
 
-	void skill2() { // Write a loop to print every third number between 1 and 30 to the console
+	void skill2() { // Write a loop to print every third number between 1 and 28 to the console
 		
 		for (int i = 1; i < 30; i+= 3) {
 		
@@ -48,12 +50,22 @@ public class SkillPraticeWorksheet {
 	}
 
 	void skill3() { // Get a random number that is less than 20 and print it to the console
-
+		
+		Random num = new Random();
+		int x = num.nextInt(20);
+		System.out.println(x);
+		
 		// Get another random number that is less than 10 and print it to the console
-
+	
+		Random ano = new Random();
+		int y = ano.nextInt(10);
+		System.out.println(y);
+		
 		// Using a pop-up, tell the user the difference between the numbers // Hint: use
 		// subtraction
-
+		
+		JOptionPane.showMessageDialog(null,x - y);
+		
 	}
 
 	void skill4() { // In a pop-up, ask the user for the city they live in
